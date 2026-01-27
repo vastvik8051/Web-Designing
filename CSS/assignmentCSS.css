@@ -1,0 +1,270 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav
+{
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 4px 4px 4px 4px;
+}
+
+.menu a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rebeccapurple;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* banner css */
+.banner
+{
+    background: url(https://www.foodpanda.com/wp-content/uploads/2025/07/about-foodpanda.webp);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner h2
+{
+    text-align: center;
+    font-size: 60px;
+    font-family: cursive;
+    background: #ff2b85;
+    position: relative;
+    top: 40%;
+    margin: auto;
+    width: 60%;
+    color: white;
+}
+
+.news
+{
+    background: #ff2b85;
+    width: 100%;
+    height: 50px;
+}
+
+.news marquee
+{
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px aqua;
+}
+
+.about
+{
+    padding: 130px;
+    text-align: center;
+    background: rgb(212, 211, 211);
+}
+
+.about h2
+{
+    font-size: 30px;
+    letter-spacing: 4px;
+    word-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    color: #ff2b85;
+}
+
+.about p
+{
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-family: fangsong;
+    margin-bottom: 12px;
+}
+
+.about button
+{
+    color: #ff2b85;
+    width: 200px;
+    height: 40px;
+    background: #ff2b85;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about button:hover
+{
+    background: linear-gradient(to right, yellow,black);
+}
+
+.press
+{
+    padding: 130px 200px;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6)), url(https://pandaads.foodpanda.com/wp-content/uploads/2024/05/foodpanda-panda-ads.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* ------------Footer--------- */
+
+footer
+{
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: auto;
+}
+
+.footer-container div h3
+{
+    margin-bottom: 20px;
+    color: goldenrod;
+    font-size: 18px;
+}
+
+.footer section p,
+.footer section a,
+.footer section li
+{
+    color: white;
+    font-size: 140px;
+    line-height: 1.6px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-section a:hover
+{
+    color: aliceblue;
+}
+
+.footer button
+{
+    text-align: center;
+    border-top: 1px solid beige;
+    margin-top: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+/* assignment tech divs start */
+
+.tech
+{
+    background-color: whitesmoke;
+    border: 2px;
+    width: 100%;
+    height: 101px;
+    margin-top: 20px;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech col
+{
+    flex: 1;
+}
+
+.tech div h3
+{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.tech div h1
+{
+    color: #00a2ff;
+    margin-left: 200px;
+}
+
+.tech button
+{
+    margin-right: 40px;
+    margin-top: 40px;
+    background-color: white;
+    color: #00a2ff;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    font-weight: bold;
+}
+
+.tech button.active
+{
+    color: white;
+    background-color: #00a2ff;
+}
+
+.tech button:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+    /* border: 2px solid hsl(335, 100%, 58%); */
+    box-shadow: 0px 4px 10px hsl(202, 100%, 50%);
+}
+
+.box
+{
+    border: 2px;
+    width: 100%;
+    height: 500px;
+    background-color: whitesmoke;
+}
+
+.cards
+{
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    color: hsl(202, 100%, 50%);
+    background: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+.cards:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px;
+}
+
+.cards-boxes
+{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    padding-top: 40px;
+    padding-left: 300px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+
+/* assignment tech divs end */
