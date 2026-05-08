@@ -4,14 +4,22 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
+/* navbar */
+
 .navbar
 {
-    height: 60px;
+    min-height: 60px;
     background-color: #151d28;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .nav-logo{
@@ -21,7 +29,7 @@
 
 .logo
 {
-    background-image: url(amazon-rebrand-2025_dezeen_2364_col_1-1.jpg);
+    background-image: url(/images/amazon-rebrand-2025_dezeen_2364_col_1-1.jpg);
     background-size: cover;
     height: 50px;
     width: 100%;
@@ -41,7 +49,6 @@
     color: #cccccc;
     font-size: 0.85rem;
     margin-left: 15px;
-    /* margin-top: 3px; */
 }
 
 .address-two{
@@ -58,10 +65,12 @@
 
 .nav-search{
     display: flex;
-    width: 900px;
+    width: 100%;
+    max-width: 600px;
     height: 40px;
     justify-content: space-evenly;
     border-radius: 5px;
+    margin: 10px 0;
 }
 
 .nav-search:hover{
@@ -86,7 +95,6 @@
 }
 
 .search-icon{
-    border: 2px;
     height: 36.8px;
     width: 45px;
     background-color: #febd69;
@@ -102,7 +110,6 @@
 /* box 4 */
 
 .flag{
-    border: 2px;
     height: 50px;
     width: 65px;
     border-radius: 5px;
@@ -113,7 +120,6 @@
 /* box 5 */
 
 .nav-signin{
-    border: 2px;
     width: 142px;
     height: 50px;
 }
@@ -141,7 +147,6 @@ select{
 
 /* box 6 */
 .nav-return{
-    border: 2px;
     height: 50px;
     font-size: 0.7rem;
 }
@@ -160,18 +165,18 @@ select{
     align-items: center;
     text-align: center;
 }
-/* nav end */
 
-/* pannel start */
+/* panel */
+
 .pannel{
     background-color: #071c35;
-    border: 2px;
-    height: 40px;
+    min-height: 40px;
     width: 100%;
     color: white;
     display: flex;
     align-items: center;
     padding-left: 10px;
+    flex-wrap: wrap;
 }
 
 .display{
@@ -182,7 +187,6 @@ select{
 }
 
 .pannel-menu{
-    
     height: 38px;
     width: 59px;
     display: flex;
@@ -195,41 +199,40 @@ select{
 .pannel-deals{
     width: 110px;
     height: 39px;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pannel-prime{
     width: 100px;
     height: 39px;
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pannel-reg{width: 75px;}
-
 .pannel-gifts{width: 85px}
-
 .pannel-service{width: 150px}
-
 .pannel-sell{width: 45px}
 
+
 .empty{
-    width: 710px;
-    height: 39px;
+    display: none;
 }
 
 .electronics{
     width: 200px;
 }
 
-/* hero section  */
+/* hero section */
+
 .hero-section{
-    background-image: url(heroScetionImg.jpg);
-    height: 300px;
+    background-image: url(images/heroScetionImg.jpg);
+    height: 200px;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -238,87 +241,74 @@ select{
 .hero-msg{
     width: 95%;
     background-color: white;
-    height: 40px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px;
 }
 
-/* shop section  */
+/* shop section */
+
 .shop-section{
     width: 100%;
-    height: 900px;
     background-color: #e3e6e6;
+    padding: 10px;
 }
 
 .shop-boxes{
     display: grid;
-    grid-template-columns: repeat(4, 350px);
-    column-gap: 15px;
-    row-gap: 15px;
-    padding-left: 35px;
-    padding-top: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .shop-box{
     background-color: whitesmoke;
-    height: 420px;
-    padding-top: 20px;
-    padding-left: 25px;
+    padding: 15px;
 }
 
 .game-box{
-    width:300px;
-    height: 300px;
-    background-image: url(Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg);
+    width:100%;
+    height: 250px;
+    background-image: url(images/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg);
+    background-size: cover;
 }
 
 .see-more{
     margin-top: 20px;
-    font-size: medium;
 }
 
 .see-more a{
-    font-size: medium;
     color: #2162a1;
     text-decoration: none;
 }
 
 .see-more-2{
     margin-top: 10px;
-    font-size: medium;
 }
 
 .see-more-2 a{
-    font-size: medium;
     color: #2162a1;
     text-decoration: none;
 }
 
 .box-container{
-    width: 300px;
-    height: 300px;
+    width: 100%;
     margin-top: 15px;
 }
 
 .box-container-grid{
     display: grid;
-    grid-template-columns: repeat(2, 120px);
-    column-gap: 10px;
-    row-gap: 50px;
-    padding-top: 15px;
-    padding-left: 25px;
-}
-
-.grid-box{
-    height: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .grid-box img{
-    width: 120px;
-    height: 100px;
+    width: 100%;
+    height: auto;
 }
 
 .grid-box:hover{
@@ -326,11 +316,10 @@ select{
     transform: scale(1.05);
 }
 
-/* footer   */
+/* footer */
 
 .footer{
     width: 100%;
-    height: 400px;
     background-color: #37475a;
 }
 
@@ -350,12 +339,12 @@ select{
 
 .footer-bottom{
     width: 100%;
-    height: 340px;
     color: white;
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
-    padding-top: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer-bottom ul{
@@ -370,9 +359,33 @@ select{
 .footer-bottom a{
     color: #dddddd;
     text-decoration: none;
-    cursor: pointer;
 }
 
 .footer-bottom a:hover{
     text-decoration: underline;
+}
+
+.footer-credit{
+    width: 100%;
+    background-color: #131a22;
+    color: #dddddd;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+}
+
+.footer-credit p{
+    margin: 0;
+}
+
+/* mobile */
+
+@media (max-width: 600px){
+    .hero-msg{
+        font-size: 0.7rem;
+    }
+
+    .pannel div{
+        font-size: 0.8rem;
+    }
 }
